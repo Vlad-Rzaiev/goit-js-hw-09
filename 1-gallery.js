@@ -6,5 +6,5 @@ import"./assets/modulepreload-polyfill-B5Qt9EMX.js";import"./assets/vendor-Dy2q2
 			alt="${p.description}" 
 			/>
 	</a>
-</li>`).join();i.insertAdjacentHTML("afterbegin",a);
+</li>`).join("");i.insertAdjacentHTML("afterbegin",a);
 //# sourceMappingURL=1-gallery.js.map
