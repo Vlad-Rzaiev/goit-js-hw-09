@@ -78,7 +78,7 @@ const markup = images
 	</a>
 </li>`
   )
-  .join();
+  .join('');
 
 gallery.insertAdjacentHTML('afterbegin', markup);
 
