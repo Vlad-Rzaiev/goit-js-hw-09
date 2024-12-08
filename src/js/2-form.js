@@ -25,9 +25,9 @@ form.addEventListener('input', ev => {
   const form = ev.target;
 
   if (form.name === 'email') {
-    formData.email = form.value;
+    formData.email = form.value.trim();
   } else if (form.name === 'message') {
-    formData.message = form.value;
+    formData.message = form.value.trim();
   }
 
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
@@ -40,10 +40,10 @@ form.addEventListener('submit', ev => {
     alert('Fill please all fields');
   } else {
     console.log(formData);
-  }
 
-  localStorage.removeItem(localKey);
-  formData.email = '';
-  formData.message = '';
-  form.reset();
+    localStorage.removeItem(localKey);
+    formData.email = '';
+    formData.message = '';
+    form.reset();
+  }
 });
