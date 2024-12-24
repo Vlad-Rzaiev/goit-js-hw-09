@@ -47,3 +47,5 @@ form.addEventListener('submit', ev => {
     form.reset();
   }
 });
+
+localStorage.removeItem('input');
